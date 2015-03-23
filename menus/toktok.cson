@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle TokTok'
+      'command': 'toktok:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'toktok'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'toktok:toggle'
+        }
+      ]
+    ]
+  }
+]
