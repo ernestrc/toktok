@@ -12,12 +12,14 @@
 .modal-content {
   background-color: @overlay-background-color !important;
 }
+
 #toktok-streams {
   background-color: @tree-view-background-color;
   margin: 0;
   padding: 0;
   text-align: center;
 }
+
 .opentok-logo {
   width:250px;
   height:250px;
@@ -32,4 +34,38 @@
 .connect,
 .share {
   width: 33%;
+}
+
+.call{
+  height:250px;
+  -webkit-mask: url('https://dl.dropboxusercontent.com/s/2pvoum3pj4i04hb/logo_toktok.svg');
+  -webkit-mask-size: 100% 100%;
+  background-color: #0099CB;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.error{
+  color:@text-color-error;
+}
+
+.input-group{
+  width:100%;
+}
+
+.input{
+  width:80%;
+  background:@background-color-highlight;
+  border:0;
+  height:25px;
+  color:@text-color;
+}
+
+#modal-close-btn{
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+
+.input-btn{
+  width:20%;
 }
