@@ -3,10 +3,9 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
-
 .btn {
-  background-color: @background-color-highlight !important;
-  color: @text-color-selected !important;
+  background-color: @background-color-info;
+  color: @text-color;
   border-bottom: 1px solid @base-border-color;
   border-radius: 0;
 }
@@ -20,7 +19,17 @@
   text-align: center;
 }
 .opentok-logo {
-  padding-top: 100px;
-  width: 200px;
-  margin: 0 auto;
+  width:250px;
+  height:250px;
+  -webkit-mask: url('https://dl.dropboxusercontent.com/s/gozxbtadlhs0io3/logo_opentok.svg');
+  -webkit-mask-size: 80% 80%;
+  background-color: @text-color;
+  -webkit-mask-position: 30px 20px;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.add-btn,
+.connect,
+.share {
+  width: 33%;
 }
